@@ -37,7 +37,7 @@ export default {
 <template>
   <div>
     <div>
-      <pv-menubar>
+      <pv-menubar class="toolbar">
         <template #start>
           <pv-button icon="pi pi-bars" label="CatchUp"/>
         </template>
@@ -66,5 +66,9 @@ export default {
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+.toolbar {
+  position: fixed;
 }
 </style>

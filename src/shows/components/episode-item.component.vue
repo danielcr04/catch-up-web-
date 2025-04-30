@@ -17,32 +17,26 @@ export default {
       <img :alt="episode.name" :src="episode.image" class="image-fit"/>
     </template>
     <template #title>
-      <p>{{ $t( 'episode.name') }}</p>
+      <p>{{ episode.name}}</p>
     </template>
     <template #subtitle>
       <p class="flex align-content-start flex-wrap">
 
         <span class="flex align-items-center justify-content-center">
-          {{ $t( 'episode.id ')}}
+          {{ episode.id }}
         </span>
 
       </p>
     </template>
     <template #content>
-      <p class="flex align-content-start flex-wrap mt-4">
-        {{ $t('episode.description' )}}
-        {{ $t('episode.rating' )}}
-        {{ $t('episode.season ')}}
-        {{ $t('episode.number ')}}
-        {{ $t( 'episode.summary' )}}
-      </p>
+      <p> Rating: {{ episode.rating}}</p>
+      <p> Season: {{ episode.season}}</p>
+      <p> Summary: {{ episode.summary}}</p>
     </template>
     <template #footer>
       <div class="flex justify-content -webkit-box-sizing: border-box; justify-content: space-between;">
         <a :href="episode.url" target="_blank">{{ $t('read-more') }}</a>
         <span class="p-spacer"></span>
-        <p> @Econocable Tv Maze, inc{{'footer.coyright'}} </p>
-        <p>{{footer.developed}} Daniel Crispin Ramos, u20221g120</p>
       </div>
     </template>
   </pv-card>
