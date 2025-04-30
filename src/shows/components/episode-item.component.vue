@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <pv-card class="m-2">
+  <pv-card class="m-2 card-episode">
     <template #header>
       <img :alt="episode.name" :src="episode.image" class="image-fit"/>
     </template>
@@ -56,4 +56,6 @@ export default {
   height: 100%;
   object-fit: cover;
 }
+
+
 </style>

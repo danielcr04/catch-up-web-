@@ -20,7 +20,7 @@ export class EpisodeAssembler {
             id: resource.id,
             name: resource.name,
             season: resource.season,
-            number: resource.num,
+            number: resource.number,
             summary: resource.summary,
             url: resource.url,
             rating: resource.rating.average,

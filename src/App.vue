@@ -39,6 +39,7 @@ export default {
     <div>
       <pv-menubar class="toolbar">
         <template #start>
+          <img src="./assets/vue.svg" alt="Logo Vue" />
           <pv-button icon="pi pi-bars" label="CatchUp"/>
         </template>
         <template #end>
@@ -55,19 +56,6 @@ export default {
 
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-
 .toolbar {
   position: fixed;
 }
