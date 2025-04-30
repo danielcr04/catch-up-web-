@@ -7,16 +7,11 @@ export default {
   name: "episode-list",
   components: {EpisodeItem},
   props: {
-    visible: Boolean,
-    episodes: Array[Episode]
-  },
-  data() {
-    return {
-      errors:[],
-      tvmazeApi:new TvmazeApiService()
-    }
-  },
-  methods: {}
+    episodes: {
+      type: Array,
+      required: true
+    },
+  }
 }
 </script>
 

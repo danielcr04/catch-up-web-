@@ -5,10 +5,7 @@ export default {
   name: "episode-item",
   emits: [],
   props: {
-    episode: {
-      type: Episode,
-      required: true
-    }
+    episodes: { type: Episode, required: true }
   },
   methods: {}
 }

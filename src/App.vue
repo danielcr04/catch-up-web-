@@ -10,7 +10,7 @@ import {TvmazeApiService} from "./shows/services/tvmaze-api.service.js";
 
 export default {
   name: 'App',
-  components: {EpisodeList, FooterContent, EpisodeAssembler, LanguageSwitcher},
+  components: {EpisodeList, FooterContent, LanguageSwitcher},
   data() {
     return {
       episodes:[],
