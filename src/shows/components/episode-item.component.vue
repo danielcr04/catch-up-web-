@@ -5,7 +5,7 @@ export default {
   name: "episode-item",
   emits: [],
   props: {
-    episodes: { type: Episode, required: true }
+    episode: { type: Episode, required: true }
   },
   methods: {}
 }
@@ -17,24 +17,24 @@ export default {
       <img :alt="episode.name" :src="episode.image" class="image-fit"/>
     </template>
     <template #title>
-      <p>{{ episode.name }}</p>
+      <p>{{ $t( 'episode.name') }}</p>
     </template>
     <template #subtitle>
       <p class="flex align-content-start flex-wrap">
 
         <span class="flex align-items-center justify-content-center">
-          {{ episode.id }}
+          {{ $t( 'episode.id ')}}
         </span>
 
       </p>
     </template>
     <template #content>
       <p class="flex align-content-start flex-wrap mt-4">
-        {{ episode.description }}
-        {{ episode.rating }}
-        {{ episode.season }}
-        {{ episode.number }}
-        {{ episode.summary }}
+        {{ $t('episode.description' )}}
+        {{ $t('episode.rating' )}}
+        {{ $t('episode.season ')}}
+        {{ $t('episode.number ')}}
+        {{ $t( 'episode.summary' )}}
       </p>
     </template>
     <template #footer>

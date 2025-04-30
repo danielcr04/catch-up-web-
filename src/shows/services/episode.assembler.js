@@ -1,8 +1,16 @@
 import {Episode} from "../model/episode.entity.js";
 
 export class EpisodeAssembler {
+    static episode=null;
+
+    static withEpisode(episode){
+        this.episode = episode;
+        return this;
+    }
+
     static toEntitiesFromResponse(response){
-        return response.map((episode) => {
+        const episodesResponse = response.data;
+        return episodesResponse.map((episode) => {
             return this.toEntityFromResource(episode);
         });
     }
